@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Story Teller</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ AI Story Teller</h1>
+            <p>Co-create amazing stories with AI</p>
+        </header>
+
+        <main id="app">
+            <div id="start-screen" class="screen active">
+                <div class="input-group">
+                    <label for="prompt">What should the story be about?</label>
+                    <textarea id="prompt" placeholder="e.g., A detective solving a mystery in a cyberpunk city..."></textarea>
+                </div>
+                <button id="start-btn" class="primary-btn">Start Story</button>
+            </div>
+
+            <div id="story-screen" class="screen">
+                <div id="story-container" class="story-content">
+                    <!-- Story segments will appear here -->
+                </div>
+                
+                <div class="controls">
+                    <div class="input-group">
+                        <textarea id="user-input" placeholder="What happens next?"></textarea>
+                    </div>
+                    <button id="continue-btn" class="primary-btn">Continue</button>
+                </div>
+            </div>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Weaving the narrative...</p>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
