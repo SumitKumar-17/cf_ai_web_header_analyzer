@@ -31,8 +31,8 @@ HeaderGuard is a modern full-stack application designed to help developers and s
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd cf_ai_story_teller
+   git clone https://github.com/SumitKumar-17/cf_ai_web_header_analyzer.git
+   cd cf_ai_web_header_analyzer
    ```
 
 2. Install dependencies:
